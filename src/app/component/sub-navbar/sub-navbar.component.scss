@@ -1,0 +1,42 @@
+.sub-navbar-add {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-navbar-add span {
+  margin-left: 10px;
+
+}
+.location_icon, .time_icon {
+  height: 20px;
+  width: 20px;
+  margin-left: 15px;
+}
+
+.location_icon img, .time_icon img {
+  width: 20px;
+}
+.ASAP {
+  font-weight: normal;
+  margin-left: 10px;
+}
+.change_button {
+  background: none;
+  box-sizing: border-box;
+  border: rgb(189, 186, 186) solid 1px;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin-left: 15px;
+}
+
+.change_button:hover {
+  cursor: pointer;
+}

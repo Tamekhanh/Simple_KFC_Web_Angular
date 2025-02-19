@@ -1,0 +1,27 @@
+#container {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #202124;
+}
+
+.to-top-btn img, .to-top-btn{
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.to-top-btn {
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 5%;
+  left: 95%;
+  background-color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+}

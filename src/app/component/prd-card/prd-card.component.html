@@ -1,0 +1,33 @@
+<div class="menu-crd">
+    <div class="crd-img">
+        <img [src]="item.image" alt="crd-img">
+    </div>
+    <div class="basic-info">
+        <span class="menu-crd-title">{{ item.title }}</span>
+        <div class="menu-crd-price">
+
+            <span class="menu-crd-base-price">
+                {{ item.base_price }} <span class="menu-crd-base-price-d">đ</span>
+            </span>
+            @if (item.sale_price!="" ) {
+                <span class="menu-crd-sale-price">
+                {{ item.sale_price}} <span class="menu-crd-base-price-d">đ</span>
+            </span>
+            }
+        </div>
+    </div>
+    <div class="menu-crd-detail">
+        <span>{{ item.description }}</span>
+    </div>
+    <div class="menu-crd-btn">
+        @if (item.isCus) {
+            <button class="btn-customise">Customise</button>
+            <button class="btn-add">Add</button>
+        } @else {
+            <button class="btn-add-alter">Add</button>
+        }
+    </div>
+    <div class="contain-ifo">
+        <span>i</span>
+    </div>
+</div>

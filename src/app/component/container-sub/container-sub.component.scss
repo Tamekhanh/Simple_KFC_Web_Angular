@@ -1,0 +1,30 @@
+.container {
+  padding-top: 50px;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.sub-container {
+  display: inline;
+  flex-flow: column;
+  overflow: hidden;
+}
+.menu-sub {
+  width: 1420px;
+  min-width: 1000px;
+  margin-bottom: 40px;
+}
+.menu-title {
+  font-size: 28px;
+  font-weight: 750;
+
+}
+
+.menu-sub-contain {
+  display: flex;
+  flex-flow: wrap;
+  unicode-bidi: isolate;
+}

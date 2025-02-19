@@ -1,0 +1,100 @@
+.nav-op-left {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 15px;
+  text-decoration: underline 0.15em white;
+  transition: text-decoration linear 500ms;
+}
+
+.nav-op-left:hover {
+  text-decoration: underline 0.15em black;
+}
+.left-op-logo, .KFC_logo {
+  width: 80px;
+}
+
+.right-op,.left-op {
+  min-width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  width: 80%;
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: black;
+  flex-wrap: nowrap;
+}
+.navbar,.navbar-container {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.navbar-container {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px 0px 20px;
+  color: black;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px 0px 20px;
+  color: black;
+}
+
+.right-op-lang p {
+  font-weight: bold;
+  font-size: 15px;
+
+}
+
+.right-op-profile,.right-op-chicken,.right-op-menu{
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-op-profile:hover,.right-op-chicken:hover,.right-op-menu:hover,.right-op-lang:hover {
+  cursor: pointer;
+}
+.right-op-lang {
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-op-profile {
+  box-sizing: border-box;box-sizing: border-box;
+  border: solid 3px black;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.menu_icon {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.profile_pic, .chicken_bucket_icon {
+  width: 35px;
+  margin: 0px;
+  padding: 0px;
+}

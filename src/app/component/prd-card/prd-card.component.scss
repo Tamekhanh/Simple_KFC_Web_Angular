@@ -1,0 +1,147 @@
+
+.menu-crd {
+  height: fit-content;
+  width: 320px;
+  background-color: white;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.menu-crd-title {
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-crd-price {
+  min-width: 71px;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.menu-crd-sale-price {
+  text-decoration: line-through 2px;
+}
+
+.menu-crd-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.menu-crd-detail {
+  font-size: 14px;
+  height: 53px;
+  margin: 0px 10px 20px 10px;
+  color: #7E7E7E;
+}
+
+.menu-crd-sale-price {
+  color: #707070;
+  text-align: right;
+  justify-content: flex-end;
+}
+.menu-crd-base-price {
+  display: flex;
+  flex-flow: nowrap;
+  width: 100%;
+  text-align: right;
+  justify-content: end;
+}
+
+.menu-crd-sale-price span, .menu-crd-base-price span {
+  text-decoration: underline 2px;
+  text-align: right;
+}
+
+.menu-crd-price {
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.crd-img{
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.crd-img img{
+  width: 100%;
+  transition: 1s ease;
+}
+.crd-img img:hover{
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+.basic-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 10px 10px;
+}
+
+.btn-customise, .btn-add {
+  width: 40%;
+  height: 45px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-customise {
+  background-color: white;
+  border: black 1px solid;
+}
+
+.contain-ifo {
+  width: 30px;
+  height: 30px;
+  background-color: #CCCCCC;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: white solid 3px;
+  cursor: pointer;
+}
+
+.contain-ifo span{
+
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+.btn-add {
+  color: white;
+  background-color: #E4002B;
+}
+
+.btn-add-alter {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 700;
+  color: white;
+  background-color: #E4002B;
+  cursor: pointer;
+}

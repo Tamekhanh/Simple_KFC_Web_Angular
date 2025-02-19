@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="sub-container">
+        <div class="menu-sub" id="menu-sub-1">
+            <h1 class="menu-title">
+                <span>{{ title }}</span>
+            </h1>
+            <div class="menu-sub-contain">
+                <app-prd-card *ngFor="let item of items" [item]="item"></app-prd-card>
+            </div>
+
+        </div>
+    </div>
+</div>
