@@ -37,6 +37,7 @@ export class AppComponent{
   categories = [
     {
       title: "HOT DEAL",
+      id: '1',
       items: [
         {
           image: "menu/hot_deal/1.png",
@@ -50,6 +51,7 @@ export class AppComponent{
     },
     {
       title:"NEW PRODUCT",
+      id: '2',
       items: [
         {
           image: "menu/new_products/1.png",
@@ -79,6 +81,7 @@ export class AppComponent{
     },
     {
       title:"COMBO FOR 1",
+      id: '3',
       items:[
           {
             image: "menu/combo_1/1.png",
@@ -148,6 +151,7 @@ export class AppComponent{
 },
     {
       title:"COMBO FOR SHARING",
+      id: '4',
       items: [
         {
           image: "menu/combo_sharing/1.png",
@@ -202,6 +206,7 @@ export class AppComponent{
 
     {
       title:"FRIED & ROASTED",
+      id: '5',
        items: [
         {
           image: "menu/fried_roasted/1.png",
@@ -271,6 +276,7 @@ export class AppComponent{
     },
     {
       title:"RICE - BURGER - PASTA",
+      id: '6',
       items: [
         {
           image: "menu/RBP/1.png",
@@ -333,6 +339,7 @@ export class AppComponent{
 
     {
       title: "SNACK",
+      id: '7',
       items: [
         {
           image: "menu/snack/1.png",
@@ -379,6 +386,7 @@ export class AppComponent{
 
     {
       title: "DESSERT & DRINK",
+      id: '8',
        items: [
         {
           image: "menu/d_d/1.png",

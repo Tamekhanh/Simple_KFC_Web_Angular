@@ -15,5 +15,6 @@ import {NgFor} from "@angular/common";
 })
 export class ContainerSubComponent {
   @Input() title: string="";
+  @Input() id: string="";
   @Input() items!: any[];
 }
