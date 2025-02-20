@@ -1,7 +1,7 @@
 <div id="container">
     <app-navbar></app-navbar>
     <app-sub-navbar></app-sub-navbar>
-    <app-category-choose></app-category-choose>
+    <app-category-choose [category]="categories"></app-category-choose>
     <div *ngFor="let cate of categories; let i = index">
         <app-container-sub [title]="cate.title" [id]="cate.id" [items]="cate.items"></app-container-sub>
     </div>

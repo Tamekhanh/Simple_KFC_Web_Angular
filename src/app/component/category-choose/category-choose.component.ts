@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-category-choose',
@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './category-choose.component.scss'
 })
 export class CategoryChooseComponent {
-
+  @Input() category: any;
   clickscrollx(direction: 'left' | 'right'):void {
     console.log('click scrollx');
     const scrollContainer = document.querySelector('.cate-chose-ls') as HTMLElement;
@@ -28,6 +28,8 @@ export class CategoryChooseComponent {
       element.scrollIntoView({ inline: "start", behavior: 'smooth' });
     }
   }
+
+  protected readonly toString = toString;
 }
 
 

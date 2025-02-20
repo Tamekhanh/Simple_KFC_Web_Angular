@@ -2,30 +2,12 @@
     <div class="category-choose-sub-contain">
         <span id="btn-to-left" (click)="clickscrollx('right')"><</span>
         <ul class="cate-chose-ls">
-            <li class="cate-chose-ls-1" (click)="clickscrollcontaint ('container-1')">
-                HOT DEALS
-            </li>
-            <li class="cate-chose-ls-2" (click)="clickscrollcontaint ('container-2')">
-                NEW PRODUCTS
-            </li>
-            <li class="cate-chose-ls-3" (click)="clickscrollcontaint ('container-3')">
-                COMBO FOR 1
-            </li>
-            <li class="cate-chose-ls-4" (click)="clickscrollcontaint ('container-4')">
-                COMBO FOR SHARING
-            </li>
-            <li class="cate-chose-ls-5" (click)="clickscrollcontaint ('container-5')">
-                FIRED & ROASTED
-            </li>
-            <li class="cate-chose-ls-6" (click)="clickscrollcontaint ('container-6')">
-                RICE - BURGER - PASTA
-            </li>
-            <li class="cate-chose-ls-7" (click)="clickscrollcontaint ('container-7')">
-                SNACK
-            </li>
-            <li class="cate-chose-ls-8" (click)="clickscrollcontaint ('container-8')">
-                DESSERT & DRINKS
-            </li>
+            @for (cate of category; track $index) {
+
+                <li class="cate-chose-ls-{{cate.id}}" (click)="clickscrollcontaint ('container-'+cate.id)">
+                    {{ cate.title }}
+                </li>
+            }
         </ul>
         <span id="btn-to-right" (click)="clickscrollx('left')">></span>
     </div>
