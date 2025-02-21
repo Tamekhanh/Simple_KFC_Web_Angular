@@ -17,5 +17,101 @@
             </div>
             <button mat-flat-button>BOOK NOW! </button>
         </div>
+        <div class="form-contain">
+            <img src="banner/party.png" alt="" class="banner-party">
+            <div class="sub-form-contain">
+                <div class="form-contain-left">
+                    <h5>PERSONAL INFORMATION</h5>
+                    <hr>
+                    <div class="form-group">
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Full name of child*</mat-label>
+                            <input type="" matInput>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Full name of parent*</mat-label>
+                            <input type="" matInput>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Phone number</mat-label>
+                            <input type="number" matInput>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input type="email" matInput [formControl]="emailFormControl" [errorStateMatcher]="matcher"
+                                   placeholder="">
+                            <mat-hint>Errors appear instantly!</mat-hint>
+                            @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+                                <mat-error>Please enter a valid email address</mat-error>
+                            }
+                            @if (emailFormControl.hasError('required')) {
+                                <mat-error>Email is <strong>required</strong></mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="form-contain-right">
+                    <h5>PARTY INFORMATION</h5>
+                    <hr>
+                    <div class="form-group">
+                        <h6>Party Type</h6>
+                        <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="1">Birthday Party</mat-radio-button>
+                            <mat-radio-button value="2">Party</mat-radio-button>
+                        </mat-radio-group>
+                        <h6>Party Date *</h6>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Choose a date</mat-label>
+                            <input matInput [matDatepicker]="picker">
+                            <mat-hint>MM/DD/YYYY</mat-hint>
+                            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                        </mat-form-field>
+                        <h6>Attendees *</h6>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Quantity</mat-label>
+                            <select matNativeControl required>
+                                <option value="0">Quantity</option>
+                                <option value="1">0-20</option>
+                                <option value="2">21-50</option>
+                                <option value="3">50+</option>
+                                <option value="4">Not decided yet</option>
+                            </select>
+                        </mat-form-field>
+                        <h6>Party location</h6>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Province/City*</mat-label>
+                            <select matNativeControl required>
+                                <option value="0">Province/City*</option>
+                            </select>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-label>District</mat-label>
+                            <select matNativeControl required>
+                                <option value="0">District</option>
+                            </select>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <mat-label>KFC Restaurants</mat-label>
+                            <select matNativeControl required>
+                                <option value="0">KFC Restaurants</option>
+                            </select>
+                        </mat-form-field>
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>Note</mat-label>
+                            <input matInput placeholder="Note" value="">
+                        </mat-form-field>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="policy">
+                <mat-checkbox class="example-margin"><span> I have read and agree to the <a href="#"><b>Privacy Policy</b></a> and <a href="#"><b>Terms of Use</b></a></span></mat-checkbox>
+            </div>
+            <div class="submit">
+                <button mat-flat-button disabled>Submit booking</button>
+            </div>
+        </div>
     </div>
 </div>

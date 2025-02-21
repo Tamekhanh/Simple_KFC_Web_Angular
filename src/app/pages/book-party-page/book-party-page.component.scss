@@ -6,10 +6,13 @@
     font-weight: 800;
   }
   .sub-contain {
+    min-width: 1250px;
     width: 100wv;
     padding: 30px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-flow: column;
     .party-form {
       width: 80%;
       flex-flow: column;
@@ -38,6 +41,82 @@
         background-color: red;
         font-weight: 900;
         font-size: 20px;
+      }
+    }
+    .form-contain {
+      width: 100%;
+      border-radius: 16px;
+      margin: 100px;
+      .banner-party {
+        width: 100%;
+        border-radius: 16px 16px 0px 0px;
+        min-width: 1250px;
+      }
+      .sub-form-contain {
+        width: 100%;
+        display: flex;
+        .form-contain-left {
+          width: 50%;
+          min-width: 500px;
+          padding: 20px;
+          h5 {
+            color: red;
+            font-weight: bold;
+          }
+          hr{
+            margin-bottom: 50px;
+          }
+          .form-group {
+            width: 80%;
+            display: flex;
+            flex-flow: column;
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          }
+        }
+        .form-contain-right {
+          h5 {
+            color: red;
+            font-weight: bold;
+          }
+          min-width: 500px;
+          width: 50%;
+          padding: 20px;
+          .form-group {
+            width: 80%;
+            display: flex;
+            flex-flow: column;
+            gap: 20px;
+            h5 {
+              color: red;
+              font-weight: bold;
+            }
+            h6 {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .policy {
+        display: flex;
+        justify-content: center;
+        span {
+          font-size: 20px;
+        }
+      }
+      .submit {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        button {
+            padding: 30px 30px;
+            font-weight: 900;
+            font-size: 20px;
+            cursor: not-allowed;
+        }
+
       }
     }
   }
