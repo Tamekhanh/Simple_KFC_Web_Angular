@@ -38,6 +38,10 @@ export class DetailPageComponent {
         }
     }
 
+    get totalPrice(): number {
+        return (this.currentProduct?.sale_price || this.currentProduct?.base_price || 0) * this.amount;
+    }
+
     incrementAmount(): void {
         this.amount += 1;
     }

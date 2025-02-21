@@ -6,13 +6,18 @@
         <span class="menu-crd-title">{{ item.title }}</span>
         <div class="menu-crd-price">
 
-            <span class="menu-crd-base-price">
-                {{ item.base_price }}.000 <span class="menu-crd-base-price-d">đ</span>
-            </span>
+
             @if (item.sale_price!="" ) {
-                <span class="menu-crd-sale-price">
-                {{ item.sale_price}}.000 <span class="menu-crd-base-price-d">đ</span>
+                <span class="menu-crd-base-price">
+                {{ item.sale_price }}.000 <span class="menu-crd-base-price-d">đ</span>
             </span>
+                <span class="menu-crd-sale-price">
+                {{ item.base_price}}.000 <span class="menu-crd-base-price-d">đ</span>
+            </span>
+            } @else {
+                <span class="menu-crd-base-price">
+                {{ item.base_price }}.000 <span class="menu-crd-base-price-d">đ</span>
+                </span>
             }
         </div>
     </div>

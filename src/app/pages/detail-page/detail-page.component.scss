@@ -31,6 +31,7 @@
   }
   .sub-container-right{
     min-width: fit-content;
+    padding: 20px;
     width: 50%;
     height: 100px;
     .sub-container-right-display {
@@ -41,6 +42,17 @@
       box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
       h2 {
         font-weight: bold;
+      }
+      .price-contain {
+        display: flex;
+        justify-content: space-between;
+        h4 {
+            font-weight: bold;
+        }
+        .base_price-sale {
+            color: gray;
+            text-decoration: line-through 3px;
+        }
       }
     }
   }

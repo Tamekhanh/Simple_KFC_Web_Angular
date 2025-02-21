@@ -6,6 +6,14 @@
         <div class="sub-container-right">
             <div class="sub-container-right-display">
                 <h2>{{currentProduct?.title}}</h2>
+                <div class="price-contain">
+                    @if (currentProduct?.sale_price) {
+                        <h4 class="base_price-sale">{{currentProduct?.base_price}}.000<u>đ</u></h4>
+                        <h4 class="sale_price-sale">{{currentProduct?.sale_price}}.000<u>đ</u></h4>
+                    } @else {
+                        <h4>{{currentProduct?.base_price}}.000<u>đ</u></h4>
+                    }
+                </div>
                 <span>{{currentProduct?.description}}</span>
                 <hr>
                 <div class="interact">
@@ -19,9 +27,9 @@
                         </button>
                     </div>
                     @if (currentProduct?.sale_price) {
-                        <button mat-flat-button class="price" (click)="addToCart()">ADD BUCKET {{amount}}.000<u>đ</u></button>
+                        <button mat-flat-button class="price" (click)="addToCart()">ADD BUCKET {{totalPrice}}.000<u>đ</u></button>
                     } @else {
-                        <button mat-flat-button class="price" (click)="addToCart()">ADD BUCKET {{amount}}.000<u>đ</u></button>
+                        <button mat-flat-button class="price" (click)="addToCart()">ADD BUCKET {{totalPrice}}.000<u>đ</u></button>
                     }
                 </div>
             </div>
