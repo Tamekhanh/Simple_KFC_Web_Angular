@@ -1,0 +1,65 @@
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.sub-container {
+  width: 80%;
+  display: flex;
+  flex-flow: row;
+  overflow: hidden;
+  background-color: white;
+}
+.login-banner {
+  width: 50%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.example-full-width {
+    width: 100%;
+}
+.login-side {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-side-form {
+  width: 80%;
+  button {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 30px;
+    font-weight: 900;
+  }
+  h5 {
+    font-weight: bold;
+  }
+  .forgot-password {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    a {
+      cursor: pointer;
+    }
+  }
+  .logo {
+    height: 40px;
+  }
+  .apple{
+    background-color: black;
+    color: white;
+  }
+  .google{
+    background-color: red;
+    color: white;
+  }
+  .login {
+    background-color: #28A745;
+  }
+}

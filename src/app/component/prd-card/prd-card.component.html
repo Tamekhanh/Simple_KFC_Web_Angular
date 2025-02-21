@@ -1,17 +1,17 @@
 <div class="menu-crd">
     <div class="crd-img">
-        <img [src]="item.image" alt="crd-img">
+        <img [src]="item.image" alt="crd-img" (click)="navigateToDetail()">
     </div>
     <div class="basic-info">
         <span class="menu-crd-title">{{ item.title }}</span>
         <div class="menu-crd-price">
 
             <span class="menu-crd-base-price">
-                {{ item.base_price }} <span class="menu-crd-base-price-d">đ</span>
+                {{ item.base_price }}.000 <span class="menu-crd-base-price-d">đ</span>
             </span>
             @if (item.sale_price!="" ) {
                 <span class="menu-crd-sale-price">
-                {{ item.sale_price}} <span class="menu-crd-base-price-d">đ</span>
+                {{ item.sale_price}}.000 <span class="menu-crd-base-price-d">đ</span>
             </span>
             }
         </div>
@@ -22,9 +22,9 @@
     <div class="menu-crd-btn">
         @if (item.isCus) {
             <button class="btn-customise">Customise</button>
-            <button class="btn-add">Add</button>
+            <button class="btn-add" (click)="addToCart(item)">Add</button>
         } @else {
-            <button class="btn-add-alter">Add</button>
+            <button class="btn-add-alter" (click)="addToCart(item)">Add</button>
         }
     </div>
     <div class="contain-ifo">

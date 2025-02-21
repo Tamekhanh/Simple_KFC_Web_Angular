@@ -1,0 +1,4 @@
+<app-category-choose [category]="producService.categories"></app-category-choose>
+<div *ngFor="let cate of producService.categories; let i = index">
+    <app-container-sub [title]="cate.title" [id]="cate.id.toString()" [items]="cate.items"></app-container-sub>
+</div>

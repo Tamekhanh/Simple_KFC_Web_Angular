@@ -1,0 +1,39 @@
+.banner {
+  width: 100%;
+}
+.container {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.sub-container {
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  background-color: white;
+}
+.title {
+  display: flex;
+  width: 100%;
+  font-weight: 1000;
+  margin-top: 50px;
+  h2 {
+    font-weight: 900;
+  }
+}
+.banner-list{
+  width: 100%;
+  display: flex;
+  flex-flow: wrap row;
+  gap: 20px;
+  padding: 20px 0px;
+  margin-bottom: 50px;
+}
+app-categories-home {
+}

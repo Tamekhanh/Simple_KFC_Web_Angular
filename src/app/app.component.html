@@ -1,10 +1,7 @@
 <div id="container">
     <app-navbar></app-navbar>
     <app-sub-navbar></app-sub-navbar>
-    <app-category-choose [category]="categories"></app-category-choose>
-    <div *ngFor="let cate of categories; let i = index">
-        <app-container-sub [title]="cate.title" [id]="cate.id" [items]="cate.items"></app-container-sub>
-    </div>
+    <router-outlet></router-outlet>
     <app-end-page></app-end-page>
     <button class="to-top-btn" id="to-top-btn" (click)="topFunction()">
         <img src="feature-btn-img/to-top.png" alt="">

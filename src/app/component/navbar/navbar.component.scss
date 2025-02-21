@@ -5,10 +5,18 @@
   margin-left: 15px;
   text-decoration: underline 0.15em white;
   transition: text-decoration linear 500ms;
+  font-size: 20px;
+}
+.cart-btn{
+  background-color: white;
+  box-shadow: none;
 }
 
 .nav-op-left:hover {
   text-decoration: underline 0.15em black;
+}
+.amount-adj-sub {
+
 }
 .left-op-logo, .KFC_logo {
   width: 80px;
@@ -58,7 +66,7 @@
 .right-op-lang p {
   font-weight: bold;
   font-size: 15px;
-
+    margin: 0px;
 }
 
 .right-op-profile,.right-op-chicken,.right-op-menu{

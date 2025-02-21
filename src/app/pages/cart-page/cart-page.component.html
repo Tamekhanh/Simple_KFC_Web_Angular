@@ -1,0 +1,51 @@
+
+<div class="container">
+    <div class="sub-container">
+        <div class="menu-sub">
+            <h1>MY BUCKET</h1>
+            <div class="cart-container">
+                <div class="cart-crd-container">
+                    <app-cart-prd-crd *ngFor="let item of cartService.getCartItem()" [item]="item"></app-cart-prd-crd>
+                    <div class="recommend-container">
+                        <h4>
+                            This goes great with...
+                        </h4>
+                        <div class="recommend-list">
+                            <app-cart-recommend [items] = "snackItems"></app-cart-recommend>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-price-crd">
+                    <h3>{{totalItemAmount}} ITEM</h3>
+                    <hr>
+                    <h6>Have an Online Coupon?</h6>
+                    <div class="coupoun-contain">
+                        <mat-form-field class="coupon-contain-input" appearance="outline">
+                            <mat-label >Online Coupon*</mat-label>
+                            <textarea matInput placeholder="" ></textarea>
+                        </mat-form-field>
+                        <button mat-flat-button>Redeem</button>
+                    </div>
+                    <hr>
+                    <div class="total-price">
+                        <p>Total Price: </p>
+                        <p>{{totalPrice}}.000<u>đ</u></p>
+                    </div>
+                    <div class="total-price">
+                        <p>Delivery Price: </p>
+                        <p>10.000<u>đ</u></p>
+                    </div>
+                    @let total = totalPrice + 10;
+                    <div class="total-price">
+                        <p>Total: </p>
+                        <b>{{total}}.000<u>đ</u></b>
+                    </div>
+                    <hr>
+                    <div>
+                        <button mat-flat-button class="check-out">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

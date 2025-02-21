@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="sub-container">
+        <div class="sub-container-left">
+            <img [src]="currentProduct?.image" alt="">
+        </div>
+        <div class="sub-container-right">
+            <div class="sub-container-right-display">
+                <h2>{{currentProduct?.title}}</h2>
+                <span>{{currentProduct?.description}}</span>
+                <hr>
+                <div class="interact">
+                    <div class="amount-add">
+                        <button mat-fab aria-label="Example icon button with a delete icon" class="minus-btn" (click)="decrementAmount()">
+                            <mat-icon>remove</mat-icon>
+                        </button>
+                        <span>{{amount}}</span>
+                        <button mat-fab aria-label="Example icon button with a delete icon" class="minus-btn" (click)="incrementAmount()">
+                            <mat-icon>add</mat-icon>
+                        </button>
+                    </div>
+                    @if (currentProduct?.sale_price) {
+                        <button mat-flat-button class="price" (click)="addToCart()">ADD BUCKET {{amount}}.000<u>đ</u></button>
+                    } @else {
+                        <button mat-flat-button class="price" (click)="addToCart()">ADD BUCKET {{amount}}.000<u>đ</u></button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

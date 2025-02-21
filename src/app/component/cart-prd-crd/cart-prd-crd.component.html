@@ -1,0 +1,29 @@
+<div class="cart-crd">
+    <div class="cart-crd-img">
+        <img [src]="item.image" alt="">
+    </div>
+    <div div class="cart-crd-info-ctn">
+        <div class="cart-crd-info">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+        </div>
+        <div class="cart-crd-btn">
+            <a href="#" (click)="removeItem($event)">Remove</a>
+        </div>
+    </div>
+    <div class="amount-adj">
+        <button mat-fab aria-label="Example icon button with a delete icon" class="minus-btn" (click)="decrementAmount()">
+            <mat-icon>remove</mat-icon>
+        </button>
+        <span>{{item.amount}}</span>
+        <button mat-fab aria-label="Example icon button with a delete icon" class="minus-btn" (click)="incrementAmount()">
+            <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    <div class="amount-adj-sub">
+        @if (item.sale_price) {
+        <span class="sale">{{ item.sale_price }}.000<u>đ</u></span>
+        }
+        <span>{{ item.base_price }}.000<u>đ</u></span>
+    </div>
+</div>

@@ -1,0 +1,106 @@
+.container {
+  padding-top: 50px;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.sub-container {
+  display: inline;
+  flex-flow: column;
+  overflow: hidden;
+}
+.menu-sub {
+  width: 1420px;
+  min-width: 1000px;
+  margin-bottom: 40px;
+}
+.menu-title {
+  font-size: 28px;
+  font-weight: 750;
+
+}
+.cart-container {
+  display: flex;
+  gap: 20px;
+}
+.recommend-container {
+  background-color: #2D2D2D;
+  height: fit-content;
+  border-radius: 16px;
+  padding: 15px;
+  h4 {
+    color: white;
+    font-weight: 800;
+  }
+  .recommend-list {
+    overflow-x: scroll;
+    overflow-y: hidden ;
+    display: flex;
+    flex-flow: row;
+  }
+}
+app-cart-recommend {
+  display: flex;
+}
+.cart-crd-container {
+  width: 1026px;
+  min-width: 1026px;
+}
+
+.menu-sub-contain {
+  display: flex;
+  flex-flow: wrap;
+  unicode-bidi: isolate;
+}
+.total-price-crd {
+  width: 100%;
+  margin-right: 10px;
+  height: fit-content;
+  background-color: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px 5px lightgray;
+  h3 {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .total-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .check-out {
+    width: 100%;
+    padding: 25px;
+    background-color: red;
+    font-weight: 900;
+  }
+}
+.coupon-contain-input {
+  width: 62%;
+  margin-right: 5px;
+  padding: 5px;
+  padding-bottom: 20px;
+}
+.coupon-contain-input:focus {
+  outline: none;
+}
+mat-form-field {
+  background-color: white;
+  div {
+    background-color: white;
+  }
+  matInput {
+    background-color: white;
+  }
+}
+
+
+.coupoun-contain {
+  width: 100%;
+  margin-bottom: 10px;
+}
