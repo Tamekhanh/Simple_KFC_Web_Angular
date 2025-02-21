@@ -3,6 +3,7 @@ import {MatFabButton} from "@angular/material/button";
 import {MatIcon} from "@angular/material/icon";
 import {CartService} from "../../services/cart-service/cart.service";
 import {CartPageComponent} from "../../pages/cart-page/cart-page.component";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-cart-prd-crd',
@@ -37,4 +38,6 @@ export class CartPrdCrdComponent {
         this.cartPage.updateTotalItemAmount()
         this.cdr.markForCheck();
     }
+
+
 }

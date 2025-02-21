@@ -4,6 +4,7 @@ import {NgFor} from "@angular/common";
 import {MatIconModule} from '@angular/material/icon';
 import {CartService} from "../../services/cart-service/cart.service";
 import {CartPageComponent} from "../../pages/cart-page/cart-page.component";
+import {Router} from "@angular/router";
 @Component({
   selector: 'app-cart-recommend',
   standalone: true,
@@ -12,12 +13,15 @@ import {CartPageComponent} from "../../pages/cart-page/cart-page.component";
   styleUrl: './cart-recommend.component.scss'
 })
 export class CartRecommendComponent {
-  constructor(public productService: ProductService,public cartService: CartService, private cartPage: CartPageComponent) {
+  constructor(public productService: ProductService,public cartService: CartService, private cartPage: CartPageComponent,public router: Router) {
   }
   @Input() items: any[] = [];
   addToCart(item: any) {
     this.cartService.addToCart(item);
     this.cartPage.updateTotalPrice();
     this.cartPage.updateTotalItemAmount()
+  }
+  navigateToDetail(item: any) {
+    this.router.navigate(['/detail', item]);
   }
 }
